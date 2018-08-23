@@ -3,3 +3,8 @@
 ################################################################################
 
 /Project/.vs
+/Project/packages
+/Project/Project/Areas
+/Project/Project/bin
+/Project/Project/obj
+/Project/Project/Properties
