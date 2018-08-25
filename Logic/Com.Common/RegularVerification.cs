@@ -14,7 +14,7 @@ namespace Com.Common
         /// <returns></returns>
         public static bool IsMobile(string mobile)
         {
-            return Regex.IsMatch(mobile, @"^[1]+[3,4,5,7,8,9]+\d{9}");
+            return Regex.IsMatch(mobile, @"^(13[0-9]|15[012356789]|18[0-9]|14[57]|17[35678]|166|19[89])\d{8}");
         }
 
         /// <summary>
