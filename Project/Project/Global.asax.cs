@@ -18,6 +18,16 @@ namespace Project
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            // 返回json数据格式
+            GlobalConfiguration.Configuration.Formatters.XmlFormatter.SupportedMediaTypes.Clear();
+
+            //配置返回的时间类型数据格式  
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.Converters.Add(
+                new Newtonsoft.Json.Converters.IsoDateTimeConverter()
+                {
+                    DateTimeFormat = "yyyy-MM-dd HH:mm:ss"
+                });
         }
     }
 }
