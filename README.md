@@ -1,5 +1,5 @@
 # Common
-记录自己整理的框架已经常用的一些方式业务代码
+记录自己整理的Entity Framework框架已经常用的一些方式业务代码
 
 
 # Project文件夹
